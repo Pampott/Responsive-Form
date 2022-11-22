@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.form {
+  background: rgba(234, 219, 208, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 53%;
+  min-width: 320px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 5px 5px 20px 0px #f2e9e2;
+          box-shadow: inset 5px 5px 20px 0px #f2e9e2;
+}
+
+.form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+}
+
+.form__inputs label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b281a;
+}
+
+.form__inputs input {
+  height: 35px;
+  border: #bb8a66 2px solid;
+  border-radius: 4px;
+  margin: 5px 0 15px 0;
+  padding: 5px;
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.password-wrapper input {
+  width: 100%;
+}
+
+.password-wrapper .hiding-icons {
+  position: absolute;
+  top: 25%;
+  right: 25px;
+}
+
+.password-wrapper .hiding-icons i {
+  position: absolute;
+  left: 0;
+  color: #bb8a66;
+}
+
+.password-wrapper .show {
+  display: none;
+}
+
+.form__description {
+  font-size: 13px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 5px;
+  color: white;
+  text-shadow: 5px 2px 10px #000;
+}
+
+.form__title {
+  font-size: 23px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin-left: 5px;
+  text-shadow: 5px 2px 10px #666666;
+}
+
+.form__title span {
+  color: #eadbd0;
+  text-shadow: #000;
+}
+/*# sourceMappingURL=style.css.map */

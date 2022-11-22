@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/1ecef1bbfc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Formulaire responsive</title>
 </head>
 <body>
-    
+    <img src="./assets/background.jpg" alt="background image">
+    <form class="form" action="#">
+        <h1 class="form__title">Welcome <span>Back</span></h1>
+        <p class="form__description">Welcome! Please login to continue 😊</p>
+        <div class="form__inputs">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="password">Password</label>
+            <span class="password-wrapper">
+                <input type="password" id="password">
+                <div class="hiding-icons">
+                    <i class="fa-solid fa-eye show"></i>
+                    <i class="fa-solid fa-eye-slash hide"></i>
+                </div>
+            </span>
+        </div>
+        <span class="form__remember">
+            <label for="remember">Remember me</label>
+            <input type="checkbox" name="" id="remember">
+        </span>
+        <div class="form__buttons">
+            <button class="login form__button">Log in</button>
+            <button class="signup form__button">Sign Up</button>
+        </div>
+        <p>Forgot password ?</p>
+    </form>
 </body>
 </html>
