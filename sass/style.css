@@ -96,16 +96,18 @@ img {
   position: absolute;
   top: 25%;
   right: 25px;
+  border: 0;
 }
 
 .password-wrapper .hiding-icons i {
   position: absolute;
   left: 0;
   color: #bb8a66;
+  font-size: 18px;
 }
 
-.password-wrapper .show {
-  display: none;
+.password-wrapper .hiding-icons i:last-of-type {
+  left: -1px;
 }
 
 .form__description {

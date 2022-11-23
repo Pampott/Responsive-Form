@@ -73,16 +73,17 @@ img {
         position: absolute;
         top: 25%;
         right: 25px;
+        border: 0;
         i {
             position: absolute;
             left: 0;
             color: darken($color-primary, 30);
+            font-size: 18px;
+        }
+        i:last-of-type {
+            left: -1px;
         }
     }
-    .show {
-        display: none;
-    }
-    
 }
 
 .form__description {
