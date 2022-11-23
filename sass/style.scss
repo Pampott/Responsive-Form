@@ -104,4 +104,41 @@ img {
     }
 }
 
-    
+#remember {
+    filter: hue-rotate(180deg);
+}
+
+label:last-of-type {
+    font-weight: 600;
+}
+ 
+.form__buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form__button {
+    width: 47%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 0;
+    transition: all .4s ease;
+    &:first-of-type {
+        background: darken($color-primary, 30);
+        color: lighten($bg-form, 20);
+        &:hover {
+            color: darken($color-primary, 30);
+            background: $bg-form;
+        }
+    }
+    &:last-of-type {
+        background: $bg-form;
+        color: darken($color-primary, 30);
+        &:hover {
+            color: lighten($bg-form, 20);
+            background: darken($color-primary, 30);
+        }
+    }
+}
