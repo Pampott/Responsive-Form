@@ -108,6 +108,7 @@ img {
 
 .password-wrapper .hiding-icons i:last-of-type {
   left: -1px;
+  display: none;
 }
 
 .form__description {
