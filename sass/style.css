@@ -118,6 +118,7 @@ img {
 }
 
 .form__title {
+  color: #5e402a;
   font-size: 23px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -137,6 +138,7 @@ img {
 }
 
 label:last-of-type {
+  color: #3b281a;
   font-weight: 600;
 }
 
@@ -179,5 +181,39 @@ label:last-of-type {
 .form__button:last-of-type:hover {
   color: rgba(255, 255, 255, 0.7);
   background: #bb8a66;
+}
+
+p:last-of-type {
+  color: #81583a;
+  font-size: 13px;
+  position: relative;
+  padding-bottom: 2px;
+  z-index: 1;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+p:last-of-type::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  content: "";
+  width: 0;
+  height: 10%;
+  background: #81583a;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+p:last-of-type:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+p:last-of-type:hover::after {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

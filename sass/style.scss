@@ -94,6 +94,7 @@ img {
 }
 
 .form__title {
+    color: darken($color-primary, 60);
     font-size: 23px;
     align-self: stretch;
     margin-left: 5px;
@@ -109,6 +110,7 @@ img {
 }
 
 label:last-of-type {
+    color: darken($color-primary, 70);
     font-weight: 600;
 }
  
@@ -140,5 +142,35 @@ label:last-of-type {
             color: lighten($bg-form, 20);
             background: darken($color-primary, 30);
         }
+    }
+}
+
+p:last-of-type {
+    color: darken($color-primary, 50);
+    font-size: 13px;
+    position: relative;
+    padding-bottom: 2px;
+    z-index: 1;
+    transition: all .4s ease-out;
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        content: "";
+        width: 0;
+        height: 10%;
+        background: darken($color-primary, 50);
+        transform-origin: bottom;
+        transition: all .3s ease-out;
+    }
+    &:hover 
+    {
+        cursor: pointer;
+        font-weight: 700;
+        &::after {
+            width: 100%;
+        }
+
     }
 }
